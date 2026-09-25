@@ -23,7 +23,7 @@ LABEL org.label-schema.docker.dockerfile=/Dockerfile
 LABEL org.label-schema.license=MIT
 
 USER root
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Copy SSH files
 COPY ssh/* /etc/ssh/
