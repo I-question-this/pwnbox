@@ -9,7 +9,7 @@ cd /opt/tools/crypto || exit
 
 # * APT INSTALLED TOOLS *
 # TOOLS=("")
-# apt-fast install --no-install-recommends -y "${TOOLS[@]}"
+# apt install --no-install-recommends -y "${TOOLS[@]}"
 # for tool in "${TOOLS[@]}"
 # do
 # 	:
@@ -24,5 +24,5 @@ echo "xortool" >> /opt/tools/crypto/apt_tools.txt
 
 # RsaCtfTool
 git clone --single-branch --depth 1 https://github.com/RsaCtfTool/RsaCtfTool
-apt-fast --no-install-recommends install libgmp3-dev libmpc-dev -y
+apt --no-install-recommends install libgmp3-dev libmpc-dev -y
 pip_install_reqs "RsaCtfTool" "3"

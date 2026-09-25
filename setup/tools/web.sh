@@ -9,7 +9,7 @@ cd /opt/tools/web || exit
 
 # * APT INSTALLED TOOLS *
 TOOLS=("ffuf" "sqlmap" "whatweb" "feroxbuster" "dirb" "gobuster" "nikto" "wfuzz" "httpie" "cewl" "recon-ng" "webshells")
-apt-fast install --no-install-recommends -y "${TOOLS[@]}"
+apt install --no-install-recommends -y "${TOOLS[@]}"
 for tool in "${TOOLS[@]}"
 do
 	:

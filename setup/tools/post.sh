@@ -7,7 +7,7 @@ cd /opt/tools/post || exit
 # * GIT INSTALLED TOOLS *
 
 # PwnCat
-apt-fast install -y libffi-dev
+apt install -y libffi-dev
 pip3 install --no-cache-dir pwncat-cs pwncat
 echo "pwncat" >> /opt/tools/post/apt_tools.txt
 echo "pwncat-cs" >> /opt/tools/post/apt_tools.txt

@@ -9,7 +9,7 @@ then
 	# * APT INSTALLED TOOLS *
 
 	# TOOLS=("")
-	# apt-fast install --no-install-recommends -y ${TOOLS[@]}
+	# apt install --no-install-recommends -y ${TOOLS[@]}
 	# for tool in "${TOOLS[@]}"
 	# do
 	# 	:

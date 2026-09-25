@@ -9,7 +9,7 @@ cd /opt/tools/forensics || exit
 
 # * APT INSTALLED TOOLS *
 TOOLS=("foremost" "binwalk" "steghide" "exiftool" "file")
-apt-fast install --no-install-recommends -y "${TOOLS[@]}"
+apt install --no-install-recommends -y "${TOOLS[@]}"
 for tool in "${TOOLS[@]}"
 do
 	:

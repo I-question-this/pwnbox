@@ -9,7 +9,7 @@ cd /opt/tools/reverse || exit
 
 # * APT INSTALLED TOOLS *
 TOOLS=("strace" "ltrace" "gdb")
-apt-fast install --no-install-recommends -y "${TOOLS[@]}"
+apt install --no-install-recommends -y "${TOOLS[@]}"
 for tool in "${TOOLS[@]}"
 do
 	:

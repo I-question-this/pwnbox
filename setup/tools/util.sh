@@ -8,11 +8,11 @@ mkdir -p /opt/tools/util
 cd /opt/tools/util || exit
 
 # * APT INSTALLED UTILS *
-apt-fast install --no-install-recommends -y nano tmux watch htop ftp inetutils-ping nfs-common openvpn
+apt install --no-install-recommends -y nano tmux watch htop ftp inetutils-ping nfs-common openvpn
 
 # * APT INSTALLED TOOLS *
 TOOLS=("nano" "tmux" "watch" "htop" "ftp" "inetutils-ping" "nfs-common" "openvpn")
-apt-fast install --no-install-recommends -y "${TOOLS[@]}"
+apt install --no-install-recommends -y "${TOOLS[@]}"
 for tool in "${TOOLS[@]}"
 do
 	:

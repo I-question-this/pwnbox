@@ -9,7 +9,7 @@ cd /opt/tools/network || exit
 
 # * APT INSTALLED TOOLS *
 TOOLS=("smbmap" "nbtscan" "onesixtyone" "smbclient" "smtp-user-enum" "snmp" "sslscan" "sipvicious" "tnscmd10g" "wkhtmltopdf" "hydra" "joomscan" "odat" "snmpcheck" "ldapscripts" "dnsrecon" "samba-common-bin" "enum4linux-ng")
-apt-fast install --no-install-recommends -y "${TOOLS[@]}"
+apt install --no-install-recommends -y "${TOOLS[@]}"
 for tool in "${TOOLS[@]}"
 do
 	:
@@ -42,7 +42,7 @@ pip3 install --no-cache-dir bloodhound
 
 # SprayHound
 echo "sprayhound" >> /opt/tools/network/apt_tools.txt
-apt-fast install -y libldap2-dev libsasl2-dev libssl-dev
+apt install -y libldap2-dev libsasl2-dev libssl-dev
 pip3 install --no-cache-dir sprayhound
 
 # Certipy
